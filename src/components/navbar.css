@@ -1,5 +1,5 @@
 nav {
-  height: 5rem;
+  height: 3.7rem;
   width: 100vw;
   background: var(--color-primary);
   display: grid;
@@ -54,7 +54,7 @@ nav {
   position: absolute;
   left: calc(50% - 0.6rem);
   transform: rotate(45deg);
-  margin-top: 0.9rem;
+  margin-top: 0.3rem;
 }
 
 /* MEDIA QUERIES (medium and small screens) */
