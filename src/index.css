@@ -13,7 +13,7 @@
 :root {
   --primary-hue: 210;
   --gray-hue: withe;
-  --color-primary: hsl(var(--primary-hue), 50%, 50%);
+  --color-primary: hsl(var(--primary-hue), 20%, 70%);
   --color-primary-variant: hsl(var(--primary-hue), 100%, 65%);
   --color-secondary: #ffb116;
   --color-gray-100: hsl(var(--gray-hue), 47%, 94%);
@@ -33,7 +33,7 @@
 
 body {
   /* no estaba */
-  margin-top: 80px;
+  /* margin-top: 80px; */
   /* no estaba */
   font-family: "Montserrat", sans-serif;
   color: var(--color-gray-200);
@@ -165,8 +165,9 @@ section {
 }
 
 .header {
-  margin-top: 5rem;
+  margin-top: 3.4rem;
   height: 20rem;
+  /* lol */
   overflow: hidden;
   border-bottom: 2px solid var(--color-gray-400);
 }
