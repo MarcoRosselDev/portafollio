@@ -1,6 +1,6 @@
 import "./contact.css";
-// import Header from "../../components/Header";
-// import HeaderImage from "../../images/header_bg_2.jpg";
+import Header from "../../components/Header";
+import HeaderImage from "../../images/header_bg_2.jpg";
 // import { MdEmail } from "react-icons/md";
 // import { BsMessenger } from "react-icons/bs";
 // import { IoLogoWhatsapp } from "react-icons/io";
@@ -8,8 +8,7 @@ import "./contact.css";
 const Contact = () => {
   return (
     <>
-      {/* <Header title="Get In Touch" image={HeaderImage}> */}
-      <Header title="Get In Touch">
+      <Header title="Get In Touch" image={HeaderImage}>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam fugiat
         similique architecto rerum facilis adipisci nobis possimus quaerat,
         maiores nesciunt?
