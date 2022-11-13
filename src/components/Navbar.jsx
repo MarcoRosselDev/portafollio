@@ -1,12 +1,10 @@
 import React from "react";
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-
-// import Logo from "../images/logo.png";
-// import { FaBars } from "react-icons/fa";
-// import { MdOutlineClose } from "react-icons/md";
-
+import Logo from "../images/logo.png";
 import { links } from "../data";
+import { FaBars } from "react-icons/fa";
+import { MdOutlineClose } from "react-icons/md";
 import "./navbar.css";
 // import { useGlobalContext } from "./context";
 
@@ -22,7 +20,7 @@ const Navbar = () => {
           className="logo"
           onClick={() => setIsNavShowing(false)}
         >
-          <img src="/" alt="Nav Logo" />
+          <img src={Logo} alt="Nav Logo" />
         </Link>
         <ul
           className={`nav__links ${isNavShowing ? "show__nav" : "hide__Nav"}`}
@@ -46,8 +44,7 @@ const Navbar = () => {
           className="nav__toggle-btn"
           onClick={() => setIsNavShowing((prev) => !prev)}
         >
-          {/* {isNavShowing ? <MdOutlineClose /> : <FaBars />} */}
-          {isNavShowing ? "" : ""}
+          {isNavShowing ? <MdOutlineClose /> : <FaBars />}
         </button>
       </div>
     </nav>

@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
-// import Logo from "../images/logo.png";
-// import { FaLinkedin } from "react-icons/fa";
-// import { ImFacebook } from "react-icons/im";
-// import { AiOutlineTwitter } from "react-icons/ai";
-// import { AiFillInstagram } from "react-icons/ai";
+import Logo from "../images/logo.png";
+import { FaLinkedin } from "react-icons/fa";
+import { ImFacebook } from "react-icons/im";
+import { AiOutlineTwitter } from "react-icons/ai";
+import { AiFillInstagram } from "react-icons/ai";
 
 function Footer() {
   return (
@@ -11,7 +11,7 @@ function Footer() {
       <div className="container footer__container">
         <article>
           <Link to="/" className="logo">
-            <img src="/" alt="Footer logo" />
+            <img src={Logo} alt="Footer logo" />
           </Link>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
@@ -23,28 +23,28 @@ function Footer() {
               target="_blank"
               rel="noreferrer noopener"
             >
-              {/* <FaLinkedin /> */}
+              <FaLinkedin />
             </a>
             <a
               href="http://facebook.com/"
               target="_blank"
               rel="noreferrer noopener"
             >
-              {/* <ImFacebook /> */}
+              <ImFacebook />
             </a>
             <a
               href="http://twitter.com/"
               target="_blank"
               rel="noreferrer noopener"
             >
-              {/* <AiOutlineTwitter /> */}
+              <AiOutlineTwitter />
             </a>
             <a
               href="http://instagram.com/"
               target="_blank"
               rel="noreferrer noopener"
             >
-              {/* <AiFillInstagram /> */}
+              <AiFillInstagram />
             </a>
           </div>
         </article>

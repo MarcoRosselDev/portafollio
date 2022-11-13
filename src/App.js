@@ -7,8 +7,6 @@ import Navbar from "./components/Navbar";
 import NotFound from "./pages/notFound/NotFound";
 import Gallery from "./pages/gallery/Gallery";
 
-import "./App.css";
-
 function App() {
   return;
   <BrowserRouter>
