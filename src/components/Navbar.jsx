@@ -1,0 +1,57 @@
+import React from "react";
+import { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
+
+// import Logo from "../images/logo.png";
+// import { FaBars } from "react-icons/fa";
+// import { MdOutlineClose } from "react-icons/md";
+
+import { links } from "../data";
+import "./navbar.css";
+// import { useGlobalContext } from "./context";
+
+const Navbar = () => {
+  const [isNavShowing, setIsNavShowing] = useState(false);
+  const { isModalOpen, setCloseModal } = useState();
+
+  return (
+    <nav>
+      <div className="container nav__container">
+        <Link
+          to="/home"
+          className="logo"
+          onClick={() => setIsNavShowing(false)}
+        >
+          <img src="/" alt="Nav Logo" />
+        </Link>
+        <ul
+          className={`nav__links ${isNavShowing ? "show__nav" : "hide__Nav"}`}
+        >
+          {links.map(({ name, path }, index) => {
+            return (
+              <li key={index}>
+                <NavLink
+                  to={path}
+                  //className={`${isModalOpen ? "active-nav" : ""}`}
+                  className={({ isActive }) => (isActive ? "active-nav" : "")}
+                  onClick={() => setCloseModal((prev) => !prev)}
+                >
+                  {name}
+                </NavLink>
+              </li>
+            );
+          })}
+        </ul>
+        <button
+          className="nav__toggle-btn"
+          onClick={() => setIsNavShowing((prev) => !prev)}
+        >
+          {/* {isNavShowing ? <MdOutlineClose /> : <FaBars />} */}
+          {isNavShowing ? "" : ""}
+        </button>
+      </div>
+    </nav>
+  );
+};
+
+export default Navbar;
