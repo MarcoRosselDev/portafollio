@@ -1,12 +1,12 @@
 import MainHeader from "../../components/MainHeader";
 import "./home.css";
-// import Testimonials from "../../components/Testimonials";
+import LastWorks from "../../components/LastWorks";
 
 function Home() {
   return (
     <>
       <MainHeader />
-      {/* <Testimonials /> */}
+      <LastWorks />
     </>
   );
 }

@@ -5,6 +5,7 @@ import Logo from "../images/logo.png";
 import { links } from "../data";
 import { FaBars } from "react-icons/fa";
 import { MdOutlineClose } from "react-icons/md";
+import { VscGitPullRequestDraft } from "react-icons/vsc";
 import "./navbar.css";
 // import { useGlobalContext } from "./context";
 
@@ -20,7 +21,7 @@ const Navbar = () => {
           className="logo"
           onClick={() => setIsNavShowing(false)}
         >
-          <img src={Logo} alt="Nav Logo" />
+          <VscGitPullRequestDraft className="logoGit" />
         </Link>
         <ul
           className={`nav__links ${isNavShowing ? "show__nav" : "hide__Nav"}`}

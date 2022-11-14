@@ -8,7 +8,7 @@ import {
 } from "react-icons/io";
 import { testimonials } from "../data";
 
-function Testimonials() {
+function LastWorks() {
   const [index, setIndex] = useState(0);
   const { name, quote, job, avatar } = testimonials[index];
 
@@ -30,7 +30,7 @@ function Testimonials() {
       <div className="container testimonials__container">
         <SectionHead
           icon={<ImQuotesLeft />}
-          title="Testimonials"
+          title="Last works"
           className="testimonials__head"
         />
         <Card className="testimionial">
@@ -60,4 +60,4 @@ function Testimonials() {
   );
 }
 
-export default Testimonials;
+export default LastWorks;
