@@ -15,7 +15,7 @@ function App() {
         <Route path="contact" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
 
-        <Route path="gallery" element={<Gallery />} />
+        <Route path="projects" element={<Gallery />} />
       </Routes>
       <Footer />
     </BrowserRouter>

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import image from "../images/main_header.png";
+import image from "../images/homeImage.jpg";
 
 function MainHeader() {
   return (
@@ -8,7 +8,12 @@ function MainHeader() {
         <div className="main__header-left">
           <h4>#Portfollio</h4>
           <h1>Marco Rossel</h1>
-          <p>Hi i'm autodidact programer from chile</p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione ea
+            cumque consectetur velit a, nulla provident quam deleniti,
+            recusandae nesciunt dolorum repellat quod nam perspiciatis dolorem
+            necessitatibus aperiam corrupti! Autem.
+          </p>
           <Link to="/plans" className="btn lg">
             Projects
           </Link>
