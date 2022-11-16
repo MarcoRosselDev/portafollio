@@ -2,8 +2,8 @@ import React from "react";
 
 const Frontend = () => {
   return (
-    <div className="skills__container">
-      <h3 className="skills__title">Frontend developer</h3>
+    <div className="skills__container skills__content">
+      <h3 className="skills__title ">Frontend developer</h3>
 
       <div className="skills__box">
         <div className="skills__group">
