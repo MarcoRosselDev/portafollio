@@ -84,7 +84,7 @@
   background: none;
   color: var(--text-color);
   outline: none;
-  border-radius: 0.75px;
+  border-radius: 0.75rem;
   padding: 1.5rem;
   z-index: 1;
 }

@@ -78,7 +78,7 @@ const Contact = () => {
 
           <form ref={form} onSubmit={sendEmail} className="contact__form">
             <div className="contact__form-div">
-              <label className="contact__form-tag">Name</label>
+              <label className="contact__form-tag ">Name</label>
               <input
                 type="text"
                 name="name"
