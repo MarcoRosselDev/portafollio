@@ -8,21 +8,13 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_ooxmg0l",
-        "template_hozoiwk",
-        form.current,
-        "seZ5vAwNr3jl7MPJf"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    emailjs.sendForm(
+      "service_ooxmg0l",
+      "template_hozoiwk",
+      form.current,
+      "seZ5vAwNr3jl7MPJf"
+    );
+    e.target.reset();
   };
 
   return (
@@ -119,7 +111,7 @@ const Contact = () => {
             <button className="button button--flex">
               Send Message
               <svg
-                class="button__icon"
+                className="button__icon"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
