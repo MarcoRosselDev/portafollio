@@ -23,7 +23,7 @@ const Header = () => {
           <a href="index.html" className="nav__logo">
             Marco
           </a>
-          <div className="dark-button">
+          <div className="dark-button" onClick={() => setDark(true)}>
             <div className="button-bw"></div>
           </div>
         </div>
