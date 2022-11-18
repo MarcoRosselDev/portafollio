@@ -19,18 +19,13 @@ const Header = () => {
 
   const toggleTab = () => {
     setDark((dark) => !dark);
-    if (dark === true) {
-      return "dark-mode";
-    } else {
-      return "";
-    }
   };
 
   // const [dark, setDark] = useLocalStorage("", "dark-mode");
   return (
     // <header className="header">
 
-    <header className={`header ${() => console.log("holas")}`}>
+    <header className={`header ${dark ? "dark-mode" : ""}`}>
       <nav className="nav container">
         <div className="left-side">
           <a href="index.html" className="nav__logo">
