@@ -55,22 +55,25 @@
 }
 /*=============== DARK MODE ===============*/
 
-.dark__toggle {
-  color: red;
-  margin-left: 0;
+.left-side {
+  display: flex;
 }
 
-.button_tg {
-  display: inline-block;
-  background-color: var(--title-color);
-  color: var(--container-color);
-  padding: 0.75rem 1rem;
-  border-radius: 1rem;
-  font-weight: var(--font-medium);
+.dark-button {
+  background-color: rgb(224, 224, 237);
+  margin-left: 2rem;
+  height: 1.5rem;
+  width: 4rem;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 25rem;
 }
 
-.button_tg:hover {
-  background-color: var(--title-color-dark);
+.button-bw {
+  background-color: white;
+  height: 1.5rem;
+  width: 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 25rem;
 }
 
 /*=============== BREAKPOINTS ===============*/
