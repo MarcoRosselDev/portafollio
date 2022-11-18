@@ -53,6 +53,13 @@
   --z-modal: 1000;
 }
 
+.dark-mode {
+  --title-color: red;
+  --text-color: withe;
+  --body-color: #24292f;
+  --container-color: rgb(99, 10, 10);
+}
+
 /* Responsive typography */
 @media screen and (max-width: 992px) {
   :root {

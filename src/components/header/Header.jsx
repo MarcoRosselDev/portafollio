@@ -15,17 +15,22 @@ const Header = () => {
   const [activeNav, setActiveNav] = useState("#home");
 
   /*============= Dark mode ============= */
-  const [dark, setDark] = useState(false);
+  // const [dark, setDark] = useState("");
 
+  const [dark, setDark] = useLocalStorage("", "dark-mode");
   return (
     // <header className="header">
-    <header className="header">
+
+    <header className={`header ${dark}`}>
       <nav className="nav container">
         <div className="left-side">
           <a href="index.html" className="nav__logo">
             Marco
           </a>
-          <div className="dark-button" onClick={() => setDark(true)}>
+          <div
+            className="dark-button"
+            onClick={() => (!setDark("") ? setDark("dark-mode") : setDark(""))}
+          >
             <div className="button-bw"></div>
           </div>
         </div>
