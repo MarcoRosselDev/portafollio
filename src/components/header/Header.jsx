@@ -17,7 +17,8 @@ const Header = () => {
   const [dark, setDark] = useState(false);
 
   return (
-    <header className="header">
+    // <header className="header">
+    <header className={!setDark ? "header" : "header-dark"}>
       <nav className="nav container">
         <div className="left-side">
           <a href="index.html" className="nav__logo">

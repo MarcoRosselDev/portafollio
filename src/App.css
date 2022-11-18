@@ -16,7 +16,8 @@
   --text-color: hsl(var(--hue), var(--sat), 46%);
   --body-color: hsl(var(--hue), var(--sat), 98%);
   --container-color: #fff;
-
+  /* dark mode */
+  --dark-body: #24292f;
   /*========== Font and typography ==========*/
   --body-font: "Poppins", sans-serif;
 
