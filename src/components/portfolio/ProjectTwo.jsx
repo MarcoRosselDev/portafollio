@@ -1,7 +1,7 @@
 import React from "react";
 
 const ProjectTwo = () => {
-  return <div>ProjectTwo</div>;
+  return <div>Facebook Clone</div>;
 };
 
 export default ProjectTwo;
