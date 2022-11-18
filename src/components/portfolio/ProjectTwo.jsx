@@ -9,7 +9,10 @@ const ProjectTwo = () => {
       <div className="portfolio__box">
         <div className="skills__group">
           <div className="portfolio__data">
-            <span className="portfolio__level">Basic</span>
+            <span className="portfolio__level">
+              > taildwin on styles <br /> > firebase on autentication <br /> >
+              React on JS Library
+            </span>
           </div>
           <img src={AboutImg} alt="" className="about__img" />{" "}
         </div>
