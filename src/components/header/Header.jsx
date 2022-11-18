@@ -15,28 +15,17 @@ const Header = () => {
   const [activeNav, setActiveNav] = useState("#home");
 
   /*============= Dark mode ============= */
-  const defaultDark = window.matchMedia(
-    "(prefers-color-scheme: header)"
-  ).matches;
-  const [theme, setTheme] = useLocalStorage(
-    "theme",
-    defaultDark ? "header" : "header-dark"
-  );
-
-  const switchTheme = () => {
-    const newTheme = theme === "header" ? "header" : "header-dark";
-    setTheme(newTheme);
-  };
+  const [dark, setDark] = useState(false);
 
   return (
     // <header className="header">
-    <header className="header" data-theme={theme}>
+    <header className="header">
       <nav className="nav container">
         <div className="left-side">
           <a href="index.html" className="nav__logo">
             Marco
           </a>
-          <div className="dark-button" onClick={switchTheme}>
+          <div className="dark-button" onClick={() => setDark(true)}>
             <div className="button-bw"></div>
           </div>
         </div>
