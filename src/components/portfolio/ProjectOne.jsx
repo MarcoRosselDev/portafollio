@@ -1,4 +1,5 @@
 import React from "react";
+import AboutImg from "../../assets/work4.jpg";
 
 const ProjectOne = () => {
   return (
@@ -10,7 +11,7 @@ const ProjectOne = () => {
           <div className="portfolio__data">
             <span className="portfolio__level">Basic</span>
           </div>
-          <img src="../../assets/testimonial2.png" alt="image of notebook" />
+          <img src={AboutImg} alt="" className="about__img" />{" "}
         </div>
       </div>
     </div>

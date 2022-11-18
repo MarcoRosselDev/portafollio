@@ -9,7 +9,7 @@ const Portfolio = () => {
       <h2 className="section__title">Portfolio</h2>
       <span className="section__subtitle">Last Projects</span>
 
-      <div className="portfolio__content container grid">
+      <div className="portfolio__container container grid">
         <ProjectOne />
         <ProjectTwo />
       </div>
