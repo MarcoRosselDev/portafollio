@@ -15,22 +15,24 @@ const Header = () => {
   const [activeNav, setActiveNav] = useState("#home");
 
   /*============= Dark mode ============= */
-  // const [dark, setDark] = useState("");
+  const [dark, setDark] = useState("");
 
-  const [dark, setDark] = useLocalStorage("", "dark-mode");
+  const toggleTab = () => {
+    console.log("clicked");
+    return setDark("dark-mode");
+  };
+
+  // const [dark, setDark] = useLocalStorage("", "dark-mode");
   return (
     // <header className="header">
 
-    <header className={`header ${dark}`}>
+    <header className={`header ${toggleTab}`}>
       <nav className="nav container">
         <div className="left-side">
           <a href="index.html" className="nav__logo">
             Marco
           </a>
-          <div
-            className="dark-button"
-            onClick={() => (!setDark("") ? setDark("dark-mode") : setDark(""))}
-          >
+          <div className="dark-button" onClick={toggleTab}>
             <div className="button-bw"></div>
           </div>
         </div>
