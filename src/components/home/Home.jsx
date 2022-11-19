@@ -8,10 +8,6 @@ const Home = () => {
   /*============= Dark mode ============= */
   const [dark, setDark] = useState(true);
 
-  const toggleTab = () => {
-    setDark((dark) => !dark);
-  };
-
   return (
     // <section className="home section" id="home">
     <section className={`home section ${dark ? "dark-mode" : ""}`} id="home">

@@ -15,7 +15,10 @@ const Header = () => {
   const [activeNav, setActiveNav] = useState("#home");
 
   /*============= Dark mode ============= */
-  const [dark, setDark] = useLocalStorage("asdf", true);
+  const [dark, setDark] = useLocalStorage("boolean", false);
+
+  console.log(setDark);
+  console.log(dark);
 
   // const toggleTab = () => {
   //   setDark((dark) => !dark);
@@ -33,7 +36,10 @@ const Header = () => {
           <a href="index.html" className="nav__logo">
             Marco
           </a>
-          <div className="dark-button" onClick={() => setDark((asdf) => !asdf)}>
+          <div
+            className="dark-button"
+            onClick={() => setDark((boolean) => !boolean)}
+          >
             <div className="button-bw"></div>
           </div>
         </div>
