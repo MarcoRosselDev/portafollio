@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./header.css";
-import useLocalStorage from "use-local-storage";
+import { useLocalStorage } from "../../useLocalStorage";
 
 const Header = () => {
   /*============= Change Background header ============= */
@@ -15,11 +15,13 @@ const Header = () => {
   const [activeNav, setActiveNav] = useState("#home");
 
   /*============= Dark mode ============= */
-  const [dark, setDark] = useState(false);
+  const [dark, setDark] = useLocalStorage("asdf", true);
 
-  const toggleTab = () => {
-    setDark((dark) => !dark);
-  };
+  // const toggleTab = () => {
+  //   setDark((dark) => !dark);
+  // };
+
+  /*============= Dark mode on localStorage ============= */
 
   // const [dark, setDark] = useLocalStorage("", "dark-mode");
   return (
@@ -31,7 +33,7 @@ const Header = () => {
           <a href="index.html" className="nav__logo">
             Marco
           </a>
-          <div className="dark-button" onClick={toggleTab}>
+          <div className="dark-button" onClick={() => setDark((asdf) => !asdf)}>
             <div className="button-bw"></div>
           </div>
         </div>
