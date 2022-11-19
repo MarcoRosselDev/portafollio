@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { json } from "react-router-dom";
 import "./header.css";
-import { useLocalStorage } from "../../useLocalStorage";
+// import { useLocalStorage } from "../../useLocalStorage";
 
 const Header = () => {
   /*============= Change Background header ============= */
@@ -15,14 +16,37 @@ const Header = () => {
   const [activeNav, setActiveNav] = useState("#home");
 
   /*============= Dark mode ============= */
-  const [dark, setDark] = useLocalStorage("boolean", false);
+  // const [dark, setDark] = useLocalStorage("boolean", false);
 
-  console.log(setDark);
-  console.log(dark);
+  // console.log(setDark);
+  // console.log(dark);
 
   // const toggleTab = () => {
   //   setDark((dark) => !dark);
   // };
+  // const localStrg = localStorage.getItem("listExample");
+  // console.log(localStorage);
+
+  // const [dark, setDark] = useState(true);
+
+  // const toggleF = () => {
+  //   setDark((dark) => !dark);
+  //   localStorage.setItem("listExample", JSON.stringify(setDark));
+  // };
+
+  const [items, setItems] = useState(false);
+
+  useEffect(() => {
+    localStorage.setItem("items", JSON.stringify(items));
+  }, [items]);
+
+  useEffect(() => {
+    const items = JSON.parse(localStorage.getItem("items"));
+    if (items) {
+      setItems(items);
+    }
+  }, [items]);
+  console.log(localStorage);
 
   /*============= Dark mode on localStorage ============= */
 
@@ -30,16 +54,13 @@ const Header = () => {
   return (
     // <header className="header">
 
-    <header className={`header ${dark ? "dark-mode" : ""}`}>
+    <header className={`header ${items ? "dark-mode" : ""}`}>
       <nav className="nav container">
         <div className="left-side">
           <a href="index.html" className="nav__logo">
             Marco
           </a>
-          <div
-            className="dark-button"
-            onClick={() => setDark((boolean) => !boolean)}
-          >
+          <div className="dark-button" onClick={() => setItems(!items)}>
             <div className="button-bw"></div>
           </div>
         </div>
