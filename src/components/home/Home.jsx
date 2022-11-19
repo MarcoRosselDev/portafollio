@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./home.css";
 import Social from "./Social";
 import Data from "./Data";
@@ -7,6 +7,14 @@ import ScrollDown from "./ScrollDown";
 const Home = () => {
   /*============= Dark mode ============= */
   const [dark, setDark] = useState(true);
+  const [items, setItems] = useState(false);
+
+  useEffect(() => {
+    const isLocal = JSON.parse(localStorage.getItem("items"));
+    if (isLocal) {
+      setItems(isLocal);
+    }
+  });
 
   return (
     // <section className="home section" id="home">
