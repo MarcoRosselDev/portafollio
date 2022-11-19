@@ -18,6 +18,14 @@ let inputTextValue = [];
 
 toDoButton.addEventListener("click", function () {
   inputTextValue = inputText.value;
-  ulPut.innerHTML += `<li>${inputTextValue}</li>`;
+  print(inputTextValue);
   inputText.value = "";
 });
+
+const print = (text) => {
+  let printDomJustOneTime = "";
+  for (let i = 0; i < text.length; i++) {
+    printDomJustOneTime += `<li>${text[i]}</li>`;
+  }
+  ulPut.innerHTML = printDomJustOneTime;
+};
