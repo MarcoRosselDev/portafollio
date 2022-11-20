@@ -15,20 +15,20 @@ const Header = () => {
   const [activeNav, setActiveNav] = useState("#home");
 
   /*============= Dark mode ============= */
-  const [darkMd, setDarkMd] = useState(false);
+  const [dark, setDark] = useState(false);
 
   useEffect(() => {
     const data = window.localStorage.getItem("darkmode1");
-    if (data !== null) setDarkMd(JSON.parse(data));
+    if (data !== null) setDark(JSON.parse(data));
   }, []);
 
   useEffect(() => {
-    window.localStorage.setItem("darkmode1", JSON.stringify(darkMd));
-  }, [darkMd]);
+    window.localStorage.setItem("darkmode1", JSON.stringify(dark));
+  }, [dark]);
 
   return (
-    // <header className={`header ${dark ? "dark-mode" : ""}`}>
-    <header className={`header ${darkMd && "dark-mode"}`}>
+    <header className={`header ${dark ? "dark-mode" : ""}`}>
+      {/* <header className={`header ${darkMd && "dark-mode"}`}> */}
       <nav className="nav container">
         <div className="left-side">
           <a href="index.html" className="nav__logo">
@@ -36,7 +36,7 @@ const Header = () => {
           </a>
           <button
             className="dark-button"
-            onClick={() => setDarkMd((darkMd) => !darkMd)}
+            onClick={() => setDark((dark) => !dark)}
           >
             <div className="button-bw"></div>
           </button>

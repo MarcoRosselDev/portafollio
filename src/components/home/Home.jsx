@@ -7,6 +7,15 @@ import ScrollDown from "./ScrollDown";
 const Home = () => {
   /*============= Dark mode ============= */
 
+  // const [dark, setDark] = useState(
+  //   JSON.parse(window.localStorage.getItem("darkmode1"))
+  // );
+
+  // useEffect(() => {
+  //   const data = window.localStorage.getItem("darkmode1");
+  //   if (data !== null) setDark(JSON.parse(data));
+  // }, []);
+
   return (
     // <section className="home section" id="home">
     // <section className={`home section ${dark ? "dark-mode" : ""}`} id="home">
