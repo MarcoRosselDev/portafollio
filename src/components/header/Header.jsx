@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { json } from "react-router-dom";
 import "./header.css";
-// import { useLocalStorage } from "../../useLocalStorage";
 
 const Header = () => {
   /*============= Change Background header ============= */
@@ -16,18 +15,21 @@ const Header = () => {
   const [activeNav, setActiveNav] = useState("#home");
 
   /*============= Dark mode ============= */
-  const [darkMode, setDarkMode] = useState(false);
-
   const areLocalStr = JSON.parse(localStorage.getItem("list1"));
+  const [dark, setDark] = useState("ligthmode");
 
   function localUses() {
-    setDarkMode((darkMode) => !darkMode);
-    localStorage.setItem("list1", JSON.stringify(darkMode));
+    setDark((dark) => !dark);
+    let dom = "";
+    if (!dark) {
+      dom = "darkmode";
+    } else {
+      dom = "ligthmode";
+    }
+    localStorage.setItem("list1", JSON.stringify(dom));
   }
   return (
-    // <header className="header">
-
-    <header className={`header ${darkMode ? "dark-mode" : ""}`}>
+    <header className={`header ${dark ? "dark-mode" : ""}`}>
       <nav className="nav container">
         <div className="left-side">
           <a href="index.html" className="nav__logo">

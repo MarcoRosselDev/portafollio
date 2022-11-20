@@ -6,15 +6,7 @@ import ScrollDown from "./ScrollDown";
 
 const Home = () => {
   /*============= Dark mode ============= */
-  const [dark, setDark] = useState(true);
-  const [items, setItems] = useState(false);
-
-  useEffect(() => {
-    const isLocal = JSON.parse(localStorage.getItem("items"));
-    if (isLocal) {
-      setItems(isLocal);
-    }
-  });
+  const [dark, setDark] = useState(false);
 
   return (
     // <section className="home section" id="home">
