@@ -15,28 +15,31 @@ const Header = () => {
   const [activeNav, setActiveNav] = useState("#home");
 
   /*============= Dark mode ============= */
-  const areLocalStr = JSON.parse(localStorage.getItem("list1"));
-  const [dark, setDark] = useState(true);
+  const [darkMd, setDarkMd] = useState(false);
 
   useEffect(() => {
-    const data = window.localStorage.getItem("darkmode");
-    if (data !== null) setDark(JSON.parse(data));
-  });
+    const data = window.localStorage.getItem("darkmode1");
+    if (data !== null) setDarkMd(JSON.parse(data));
+  }, []);
 
   useEffect(() => {
-    window.localStorage.setItem("darkmode", JSON.stringify(dark));
-  }, [dark]);
+    window.localStorage.setItem("darkmode1", JSON.stringify(darkMd));
+  }, [darkMd]);
 
   return (
-    <header className={`header ${dark ? "dark-mode" : ""}`}>
+    // <header className={`header ${dark ? "dark-mode" : ""}`}>
+    <header className={`header ${darkMd && "dark-mode"}`}>
       <nav className="nav container">
         <div className="left-side">
           <a href="index.html" className="nav__logo">
             Marco
           </a>
-          <div className="dark-button" onClick={() => setDark(false)}>
+          <button
+            className="dark-button"
+            onClick={() => setDarkMd((darkMd) => !darkMd)}
+          >
             <div className="button-bw"></div>
-          </div>
+          </button>
         </div>
 
         <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
