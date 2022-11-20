@@ -13,30 +13,13 @@ const Header = (props) => {
   /*============= Toggle Menu ============= */
   const [Toggle, showMenu] = useState(false);
   const [activeNav, setActiveNav] = useState("#home");
-
-  /*============= Dark mode ============= */
-  // const [dark, setDark] = useState(false);
-
-  // useEffect(() => {
-  //   const data = window.localStorage.getItem("darkmode1");
-  //   if (data !== null) setDark(JSON.parse(data));
-  // }, []);
-
-  // useEffect(() => {
-  //   window.localStorage.setItem("darkmode1", JSON.stringify(dark));
-  // }, [dark]);
-
   return (
-    // <header className={`header ${dark ? "dark-mode" : ""}`}>
     <header className={`header ${props.mode ? "dark-mode" : ""}`}>
       <nav className="nav container">
         <div className="left-side">
           <a href="index.html" className="nav__logo">
             Marco
           </a>
-          <button className="dark-button" onClick={() => console.log("hola")}>
-            <div className="button-bw"></div>
-          </button>
         </div>
 
         <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
