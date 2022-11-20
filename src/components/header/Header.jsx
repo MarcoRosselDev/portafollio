@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { json } from "react-router-dom";
 import "./header.css";
 
-const Header = () => {
+const Header = (props) => {
   /*============= Change Background header ============= */
   window.addEventListener("scroll", function () {
     const header = document.querySelector(".header");
@@ -15,29 +15,26 @@ const Header = () => {
   const [activeNav, setActiveNav] = useState("#home");
 
   /*============= Dark mode ============= */
-  const [dark, setDark] = useState(false);
+  // const [dark, setDark] = useState(false);
 
-  useEffect(() => {
-    const data = window.localStorage.getItem("darkmode1");
-    if (data !== null) setDark(JSON.parse(data));
-  }, []);
+  // useEffect(() => {
+  //   const data = window.localStorage.getItem("darkmode1");
+  //   if (data !== null) setDark(JSON.parse(data));
+  // }, []);
 
-  useEffect(() => {
-    window.localStorage.setItem("darkmode1", JSON.stringify(dark));
-  }, [dark]);
+  // useEffect(() => {
+  //   window.localStorage.setItem("darkmode1", JSON.stringify(dark));
+  // }, [dark]);
 
   return (
-    <header className={`header ${dark ? "dark-mode" : ""}`}>
-      {/* <header className={`header ${darkMd && "dark-mode"}`}> */}
+    // <header className={`header ${dark ? "dark-mode" : ""}`}>
+    <header className={`header ${props.mode ? "dark-mode" : ""}`}>
       <nav className="nav container">
         <div className="left-side">
           <a href="index.html" className="nav__logo">
             Marco
           </a>
-          <button
-            className="dark-button"
-            onClick={() => setDark((dark) => !dark)}
-          >
+          <button className="dark-button" onClick={() => console.log("hola")}>
             <div className="button-bw"></div>
           </button>
         </div>

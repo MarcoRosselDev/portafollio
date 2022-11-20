@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
 import About from "./components/about/About";
 import Contact from "./components/contact/Contact";
@@ -10,11 +10,29 @@ import ScrollUp from "./components/scrollup/ScrollUp";
 import Skills from "./components/skills/Skills";
 
 function App() {
+  /*============= Dark mode ============= */
+  const [dark, setDark] = useState(false);
+
+  useEffect(() => {
+    const data = window.localStorage.getItem("darkmode1");
+    if (data !== null) setDark(JSON.parse(data));
+  }, []);
+
+  useEffect(() => {
+    window.localStorage.setItem("darkmode1", JSON.stringify(dark));
+  }, [dark]);
+
   return (
     <>
-      <Header />
+      <button
+        className="button-practis"
+        onClick={() => setDark((dark) => !dark)}
+      >
+        clicked
+      </button>
+      <Header mode={dark} />
       <main className="main">
-        <Home />
+        <Home mode={dark} />
         <About />
         <Skills />
         <Portfolio />
