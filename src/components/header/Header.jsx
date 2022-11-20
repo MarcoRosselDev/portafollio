@@ -16,22 +16,17 @@ const Header = () => {
 
   /*============= Dark mode ============= */
   const areLocalStr = JSON.parse(localStorage.getItem("list1"));
-  const [dark, setDark] = useState("ligthmode");
+  const [dark, setDark] = useState(true);
 
-  if (areLocalStr) {
-    // localUses();
-  }
+  useEffect(() => {
+    const data = window.localStorage.getItem("darkmode");
+    if (data !== null) setDark(JSON.parse(data));
+  });
 
-  function localUses() {
-    setDark((dark) => !dark);
-    let dom = "";
-    if (!dark) {
-      dom = "darkmode";
-    } else {
-      dom = "ligthmode";
-    }
-    localStorage.setItem("list1", JSON.stringify(dom));
-  }
+  useEffect(() => {
+    window.localStorage.setItem("darkmode", JSON.stringify(dark));
+  }, [dark]);
+
   return (
     <header className={`header ${dark ? "dark-mode" : ""}`}>
       <nav className="nav container">
@@ -39,7 +34,7 @@ const Header = () => {
           <a href="index.html" className="nav__logo">
             Marco
           </a>
-          <div className="dark-button" onClick={localUses}>
+          <div className="dark-button" onClick={() => setDark(false)}>
             <div className="button-bw"></div>
           </div>
         </div>
