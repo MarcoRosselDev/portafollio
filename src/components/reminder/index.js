@@ -16,16 +16,24 @@ const ulPut = document.querySelector(".ulPut");
 
 let inputTextValue = [];
 
+const areSomethinInLocalStorage = JSON.parse(localStorage.getItem("listOne"));
+
+if (areSomethinInLocalStorage) {
+  inputTextValue = areSomethinInLocalStorage;
+  printD(inputTextValue);
+}
+
 toDoButton.addEventListener("click", function () {
-  inputTextValue = inputText.value;
-  print(inputTextValue);
+  inputTextValue.push(inputText.value);
   inputText.value = "";
+  localStorage.setItem("listOne", JSON.stringify(inputTextValue));
+  printD(inputTextValue);
 });
 
-const print = (text) => {
+function printD(arr) {
   let printDomJustOneTime = "";
-  for (let i = 0; i < text.length; i++) {
-    printDomJustOneTime += `<li>${text[i]}</li>`;
+  for (let i = 0; i < arr.length; i++) {
+    printDomJustOneTime += `<li>${arr[i]}</li>`;
   }
   ulPut.innerHTML = printDomJustOneTime;
-};
+}
