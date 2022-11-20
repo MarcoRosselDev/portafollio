@@ -24,12 +24,9 @@ function App() {
 
   return (
     <>
-      <button
-        className="button-practis"
-        onClick={() => setDark((dark) => !dark)}
-      >
+      <div className="button-practis" onClick={() => setDark((dark) => !dark)}>
         clicked
-      </button>
+      </div>
       <Header mode={dark} />
       <main className="main">
         <Home mode={dark} />

@@ -1,15 +1,6 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
-.button-practis {
-  color: white;
-  background-color: khaki;
-  z-index: 10000;
-  align-self: center;
-  height: 300px;
-  width: 300px;
-}
-
 /*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 3rem;
@@ -83,6 +74,18 @@
 }
 
 /*=============== BASE ===============*/
+
+.button-practis {
+  color: white;
+  background-color: khaki;
+  z-index: var(--z-modal);
+  position: fixed;
+  margin-left: 5rem;
+  margin-top: 1rem;
+  height: 30px;
+  width: 100px;
+}
+
 * {
   margin: 0;
   padding: 0;
