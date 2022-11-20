@@ -4,9 +4,12 @@ import AboutImg from "../../assets/perfil.jpg";
 import CV from "../../assets/John-Cv.pdf";
 import Info from "./Info";
 
-const About = () => {
+const About = (mode) => {
   return (
-    <section className="about section" id="about">
+    <section
+      className={`about section ${mode.mode === true ? "dark-mode" : ""} `}
+      id="about"
+    >
       <h2 className="section__title">About Me</h2>
       <span className="section__subtitle">My Introduction</span>
 

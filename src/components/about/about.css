@@ -1,3 +1,10 @@
+.dark-mode {
+  --title-color: rgb(228, 245, 249);
+  --text-color: rgb(228, 245, 249);
+  --body-color: #24292f;
+  background-color: var(--body-color);
+}
+
 .about__container {
   grid-template-columns: repeat(2, 1fr);
   align-items: center;

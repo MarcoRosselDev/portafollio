@@ -130,14 +130,14 @@ function App() {
       {/* <Header mode={dark} /> */}
       <main className="main">
         <Home mode={dark} />
-        <About />
-        <Skills />
-        <Portfolio />
-        <Contact />
+        <About mode={dark} />
+        <Skills mode={dark} />
+        <Portfolio mode={dark} />
+        <Contact mode={dark} />
       </main>
 
-      <Footer />
-      <ScrollUp />
+      <Footer mode={dark} />
+      <ScrollUp mode={dark} />
     </>
   );
 }
