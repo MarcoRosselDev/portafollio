@@ -20,24 +20,10 @@ const Header = () => {
 
   const areLocalStr = JSON.parse(localStorage.getItem("list1"));
 
-  if (areLocalStr) {
-    setDarkMode(areLocalStr);
-  }
-
-  // useEffect(() => {
-  //   localStorage.setItem("items", JSON.stringify(items));
-  // }, [items]);
-
-  // console.log(localStorage);
-
   function localUses() {
     setDarkMode((darkMode) => !darkMode);
+    localStorage.setItem("list1", JSON.stringify(darkMode));
   }
-  localStorage.setItem("list1", darkMode);
-
-  /*============= Dark mode on localStorage ============= */
-
-  // const [dark, setDark] = useLocalStorage("", "dark-mode");
   return (
     // <header className="header">
 
