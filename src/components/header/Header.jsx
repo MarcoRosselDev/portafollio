@@ -18,6 +18,10 @@ const Header = () => {
   const areLocalStr = JSON.parse(localStorage.getItem("list1"));
   const [dark, setDark] = useState("ligthmode");
 
+  if (areLocalStr) {
+    // localUses();
+  }
+
   function localUses() {
     setDark((dark) => !dark);
     let dom = "";
