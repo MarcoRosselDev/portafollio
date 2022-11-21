@@ -2,7 +2,6 @@ import React from "react";
 import "./footer.css";
 
 const Footer = (dark) => {
-  console.log(typeof dark.mode);
   return (
     <footer
       className={`footer ${dark.mode === true ? "footer-dark-mode" : ""} `}

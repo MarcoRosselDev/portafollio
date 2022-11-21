@@ -10,6 +10,11 @@
   transform: 0.4s;
 }
 
+.scrollUp-dark {
+  background-color: yellow;
+  --container-color: var(--dark-body);
+}
+
 .scrollup__icon {
   font-size: 1.5rem;
   color: var(--container-color);
