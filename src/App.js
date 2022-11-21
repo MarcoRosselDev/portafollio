@@ -36,7 +36,9 @@ function App() {
 
   return (
     <>
-      <header className={`header ${dark ? "dark-mode" : ""}`}>
+      <header
+        className={`header ${dark ? "dark-mode scroll-header-dark" : ""}`}
+      >
         <nav className="nav container">
           <div className="left-side">
             <a href="index.html" className="nav__logo">
