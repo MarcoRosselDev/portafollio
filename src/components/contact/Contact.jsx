@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import "./contact.css";
 
-const Contact = () => {
+const Contact = (dark) => {
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -18,7 +18,12 @@ const Contact = () => {
   };
 
   return (
-    <section className="contact section" id="contact">
+    <section
+      className={`contact section  ${
+        dark.mode === true ? "contact__dark-mode" : ""
+      } `}
+      id="contact"
+    >
       <h2 className="section__title">Get in touch</h2>
       <span className="section__subtitle">Contact Me</span>
 
@@ -82,7 +87,11 @@ const Contact = () => {
               <input
                 type="text"
                 name="name"
-                className="contact__form-input"
+                className={`${
+                  dark.mode === true
+                    ? "contact__form-input-dark"
+                    : "contact__form-input"
+                }`}
                 placeholder="Insert your name"
               />
             </div>

@@ -4,8 +4,6 @@ import Frontend from "./Frontend";
 import Backend from "./Backend";
 
 const Skills = (dark) => {
-  console.log(typeof dark.mode);
-
   return (
     <section
       className={`skills section ${
@@ -17,8 +15,8 @@ const Skills = (dark) => {
       <span className="section__subtitle">My technical level</span>
 
       <div className="skills__container container grid">
-        <Frontend dark={dark} />
-        <Backend dark={dark} />
+        <Frontend />
+        <Backend />
       </div>
     </section>
   );
