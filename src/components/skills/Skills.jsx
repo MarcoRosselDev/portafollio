@@ -6,7 +6,7 @@ import Backend from "./Backend";
 const Skills = (dark) => {
   return (
     <section
-      className={`skills section${dark.mode === true ? "dark-mode" : ""}`}
+      className={`skills section${dark.mode.mode === true ? "dark-mode" : ""}`}
       id="skills"
     >
       <h2 className="section__title">Skills</h2>

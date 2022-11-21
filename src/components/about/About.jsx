@@ -16,7 +16,7 @@ const About = (mode) => {
       <div className="about__container container grid">
         <img src={AboutImg} alt="" className="about__img" />
         <div className="about__data">
-          <Info />
+          <Info mode={mode} />
 
           <p className="about__description">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo quo
