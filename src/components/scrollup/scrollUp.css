@@ -11,7 +11,7 @@
 }
 
 .scrollUp-dark {
-  background-color: yellow;
+  background-color: rgba(205, 205, 5, 0.627);
   --container-color: var(--dark-body);
 }
 

@@ -132,6 +132,11 @@
   resize: none;
 }
 
+.button__dark-mode {
+  color: #24292f;
+  --container-color: #24292f;
+}
+
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
 @media screen and (max-width: 992px) {
