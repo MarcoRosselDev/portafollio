@@ -57,11 +57,19 @@
   align-content: center;
 }
 
+.qwe {
+  display: flex;
+  align-content: center;
+  margin-top: -1rem;
+  margin-bottom: 3rem;
+}
+
 .button-projects {
   margin-top: 20px;
-  display: inline;
-  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
 @media screen and (max-width: 992px) {
