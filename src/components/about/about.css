@@ -4,7 +4,6 @@
   --body-color: #24292f;
   background-color: var(--body-color);
   color: rgba(255, 255, 255, 0.6);
-  --container-color: red;
   --container-color-button: #24292f;
 }
 
