@@ -5,6 +5,7 @@
 
 .footer-dark-mode {
   --title-color: rgb(228, 245, 249);
+  --title-color-dark: rgb(4, 98, 129);
   --text-color: withe;
   --body-color: #24292f;
   --container-color: rgb(6, 169, 233);
