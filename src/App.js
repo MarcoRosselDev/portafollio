@@ -45,10 +45,12 @@ function App() {
               Marco
             </a>
             <div
-              className="dark-button"
+              className="dark-button-day"
               onClick={() => setDark((dark) => !dark)}
             >
-              <button className=" button-bw "></button>
+              <button
+                className={`${dark ? "button-bw-night" : "button-bw-day"}`}
+              ></button>
             </div>
           </div>
 
