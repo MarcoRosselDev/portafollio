@@ -136,7 +136,7 @@ function App() {
         <Home mode={dark} />
         <About mode={dark} />
         <Skills mode={dark} />
-        {/* <Portfolio mode={dark} /> */}
+        <Portfolio mode={dark} />
         <Contact mode={dark} />
       </main>
 
