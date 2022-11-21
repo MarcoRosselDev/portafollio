@@ -1,9 +1,12 @@
 import React from "react";
 import "./footer.css";
 
-const Footer = () => {
+const Footer = (dark) => {
+  console.log(typeof dark.mode);
   return (
-    <footer className="footer">
+    <footer
+      className={`footer ${dark.mode === true ? "footer-dark-mode" : ""} `}
+    >
       <div className="footer__container container">
         <h1 className="footer__title">Marco</h1>
 
