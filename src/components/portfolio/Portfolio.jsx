@@ -5,16 +5,16 @@ import ProjectTwo from "./ProjectTwo";
 
 const Portfolio = () => {
   return (
-    <div id="portfolio" className="portfolio__container section">
+    <div id="portfolio" className="portfolio__container section container">
       <h2 className="section__title">Portfolio</h2>
       <span className="section__subtitle">Last Projects</span>
-
       <div className="portfolio__container container grid">
         <ProjectOne />
         <ProjectTwo />
-
-        <button className="button button--flex">See All Projects</button>
       </div>
+      <button className="button button--flex button-projects">
+        See All Projects
+      </button>
     </div>
   );
 };

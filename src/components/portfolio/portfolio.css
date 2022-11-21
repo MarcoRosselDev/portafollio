@@ -50,7 +50,18 @@
 .portfolio__level {
   font-size: var(--tiny-font-size);
 }
+.div-button-allProjects {
+  display: grid;
+  align-items: center;
+  width: 5rem;
+  align-content: center;
+}
 
+.button-projects {
+  margin-top: 20px;
+  display: inline;
+  align-self: center;
+}
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
 @media screen and (max-width: 992px) {
@@ -78,5 +89,10 @@
 
   .skills__name {
     font-size: var(--small-font-size);
+  }
+
+  .button-projects {
+    font-size: var(--small-font-size);
+    width: auto;
   }
 }
