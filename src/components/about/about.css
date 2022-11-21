@@ -3,6 +3,7 @@
   --text-color: rgb(228, 245, 249);
   --body-color: #24292f;
   background-color: var(--body-color);
+  color: rgb(228, 245, 249);
 }
 
 .about__container {

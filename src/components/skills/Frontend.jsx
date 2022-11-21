@@ -2,7 +2,7 @@ import React from "react";
 
 const Frontend = (dark) => {
   return (
-    <div className={`${dark.dark.mode === true ? "dark-mode" : ""}`}>
+    <div className="">
       <div className="skills__container skills__content">
         <h3 className="skills__title ">Frontend developer</h3>
 

@@ -4,9 +4,13 @@ import Frontend from "./Frontend";
 import Backend from "./Backend";
 
 const Skills = (dark) => {
+  console.log(typeof dark.mode);
+
   return (
     <section
-      className={`skills section${dark.mode.mode === true ? "dark-mode" : ""}`}
+      className={`skills section ${
+        dark.mode === true ? "skills__dark-mode-section" : ""
+      }`}
       id="skills"
     >
       <h2 className="section__title">Skills</h2>

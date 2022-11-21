@@ -1,7 +1,6 @@
 import React from "react";
 
 const Info = (mode) => {
-  console.log(typeof mode.mode.mode);
   return (
     <div className="about__info grid">
       <div

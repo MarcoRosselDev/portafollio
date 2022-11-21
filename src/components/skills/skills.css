@@ -49,13 +49,16 @@
   --z-modal: 1000;
 }
 
-.dark-mode {
+.skills__dark-mode-section {
+  background-color: #24292f;
   --container-color: red;
   --title-color: rgb(228, 245, 249);
   --text-color: withe;
   --body-color: #24292f;
-  --container-color: rgb(99, 10, 10);
+  --container-color: rgb(6, 169, 233);
+  color: var(--title-color);
 }
+
 .skills__container {
   grid-template-columns: repeat(2, 350px);
   column-gap: 3rem;
