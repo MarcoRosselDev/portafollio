@@ -101,7 +101,11 @@ const Contact = (dark) => {
               <input
                 type="email"
                 name="email"
-                className="contact__form-input"
+                className={`${
+                  dark.mode === true
+                    ? "contact__form-input-dark"
+                    : "contact__form-input"
+                }`}
                 placeholder="Insert your email"
               />
             </div>
@@ -112,7 +116,11 @@ const Contact = (dark) => {
                 name="project"
                 cols="30"
                 rows="10"
-                className="contact__form-input"
+                className={`${
+                  dark.mode === true
+                    ? "contact__form-input-dark"
+                    : "contact__form-input"
+                }`}
                 placeholder="Write your project"
               ></textarea>
             </div>
