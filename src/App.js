@@ -3,11 +3,11 @@ import "./App.css";
 import About from "./components/about/About";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
-import Header from "./components/header/Header.jsx";
 import Home from "./components/home/Home";
 import Portfolio from "./components/portfolio/Portfolio";
 import ScrollUp from "./components/scrollup/ScrollUp";
 import Skills from "./components/skills/Skills";
+import "./components/header/header.css";
 
 function App() {
   /*============= Change Background header ============= */
@@ -127,7 +127,6 @@ function App() {
           </div>
         </nav>
       </header>
-      {/* <Header mode={dark} /> */}
       <main className="main">
         <Home mode={dark} />
         <About mode={dark} />
