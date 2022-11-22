@@ -4,7 +4,6 @@ import ProjectOne from "./ProjectOne";
 import ProjectTwo from "./ProjectTwo";
 
 const Portfolio = (dark) => {
-  console.log(typeof dark.mode);
   return (
     <div className={`${dark.mode === true ? "portfolio__dark-mode" : ""}`}>
       <div id="portfolio" className="portfolio__container section container ">
