@@ -6,7 +6,7 @@ import ProjectTwo from "./ProjectTwo";
 const Portfolio = (dark) => {
   console.log(typeof dark.mode);
   return (
-    <div className={`${dark.mode === true ? "dark-mode" : ""}`}>
+    <div className={`${dark.mode === true ? "portfolio__dark-mode" : ""}`}>
       <div id="portfolio" className="portfolio__container section container ">
         <h2 className="section__title">Portfolio</h2>
         <span className="section__subtitle">Last Projects</span>
