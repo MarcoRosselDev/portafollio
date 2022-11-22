@@ -1,5 +1,5 @@
 import React from "react";
-import AboutImg from "../../assets/work3.jpg";
+import AboutImg from "../../assets/facebook-clone.jpeg";
 
 const ProjectTwo = () => {
   return (
