@@ -17,6 +17,15 @@ const ProjectTwo = () => {
           <img src={AboutImg} alt="" className="about__img" />{" "}
         </div>
       </div>
+      <div>
+        <a
+          href="../../fitnesPage/public/index.html"
+          className="home__social-icon"
+          target="_blank"
+        >
+          See the Project
+        </a>
+      </div>
     </div>
   );
 };
