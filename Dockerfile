@@ -1,9 +1,15 @@
-FROM node:18
+FROM node:18 as build
 
-RUN mkdir -p /home/app
+WORKDIR /app
+COPY package*.json ./
+RUN npm install
+COPY . .
+RUN npm run build
 
-COPY . /home/app
+FROM fholzer/nginx-brotli:v1.12.2
+WORKDIR /etc/nginx
 
-EXPOSE 3000
-
-CMD ["node", "/home/app/src/index.js"]
+ADD nginx.conf /etc/nginx/nginx.conf
+COPY --from=build /app/build /usr/share/nginx/html
+EXPOSE 443
+CMD ["nginx", "-g", "daemon off;"]
