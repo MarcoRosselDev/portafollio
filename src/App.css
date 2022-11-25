@@ -84,14 +84,11 @@
 /* ====== icons svg ======== */
 .boxicon-ligth {
   filter: invert(100%);
+  fill: var(--container-color-button);
 }
 .boxicon-ligth:hover {
-  filter: invert(100%);
-}
-.boxicon-night {
-  color: #fff;
-  /* background-color: pink; */
-  filter: invert(10%);
+  filter: invert(1%);
+  fill: var(--title-color-dark);
 }
 
 /* Change background header */
