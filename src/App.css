@@ -110,6 +110,9 @@
   width: 2.1rem;
   height: 2.1rem;
 }
+.boxicon-social-fooder {
+  fill: var(--container-color);
+}
 
 /* Change background header */
 
