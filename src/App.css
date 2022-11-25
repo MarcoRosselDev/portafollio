@@ -96,6 +96,10 @@
   filter: invert(5%);
   fill: var(--lit-body);
 }
+.boxicon-mouse {
+  filter: invert(70%);
+  fill: var(--dark-body);
+}
 
 /* Change background header */
 
