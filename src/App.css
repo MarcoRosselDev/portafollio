@@ -81,6 +81,19 @@
   display: none;
 }
 
+/* ====== icons svg ======== */
+.boxicon-ligth {
+  filter: invert(100%);
+}
+.boxicon-ligth:hover {
+  filter: invert(100%);
+}
+.boxicon-night {
+  color: #fff;
+  /* background-color: pink; */
+  filter: invert(10%);
+}
+
 /* Change background header */
 
 /*=============== BUTTON ===============*/

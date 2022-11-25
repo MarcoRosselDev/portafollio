@@ -15,7 +15,7 @@ const Home = (mode) => {
       {/* <section className={`home section `} id="home"> */}
       <div className="home__container container grid">
         <div className="home__content grid ">
-          <Social />
+          <Social mode={mode} />
 
           <div className="home__img "></div>
 
