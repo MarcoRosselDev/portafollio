@@ -113,7 +113,17 @@
 .boxicon-social-fooder {
   fill: var(--container-color);
 }
+.boxicon-arrow-up {
+  margin-top: 5px;
+  fill: var(--container-color);
+}
 
+.cross-navbar {
+  /* margin-top: 5px; */
+  width: 2rem;
+  height: 2rem;
+  margin-bottom: 8px;
+}
 /* Change background header */
 
 /*=============== BUTTON ===============*/
