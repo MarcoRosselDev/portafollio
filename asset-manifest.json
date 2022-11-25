@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/MarcoRosselDev/portfolio/static/css/main.e583e3b7.css",
+    "main.js": "/MarcoRosselDev/portfolio/static/js/main.f2d78ec3.js",
+    "static/media/perfil.jpg": "/MarcoRosselDev/portfolio/static/media/perfil.47fb3be5b09f4312fce7.jpg",
+    "static/media/thumbnail.jpg": "/MarcoRosselDev/portfolio/static/media/thumbnail.746fa9dfecfb9e491ef1.jpg",
+    "static/media/Marco-CV.pdf": "/MarcoRosselDev/portfolio/static/media/Marco-CV.f19b371de844fc0dbcbd.pdf",
+    "index.html": "/MarcoRosselDev/portfolio/index.html",
+    "main.e583e3b7.css.map": "/MarcoRosselDev/portfolio/static/css/main.e583e3b7.css.map",
+    "main.f2d78ec3.js.map": "/MarcoRosselDev/portfolio/static/js/main.f2d78ec3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e583e3b7.css",
+    "static/js/main.f2d78ec3.js"
+  ]
+}
