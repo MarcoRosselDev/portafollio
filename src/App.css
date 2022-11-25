@@ -84,7 +84,7 @@
 }
 
 /* ====== icons svg ======== */
-.boxicon-ligth {
+. {
   filter: invert(100%);
   fill: var(--container-color-button);
 }
@@ -97,8 +97,14 @@
   fill: var(--lit-body);
 }
 .boxicon-mouse {
-  filter: invert(70%);
+  filter: invert(10%);
   fill: var(--dark-body);
+}
+.boxicon-check {
+  filter: invert(10%);
+  fill: var(--title-color);
+  width: 1.3rem;
+  height: 1.3rem;
 }
 
 /* Change background header */

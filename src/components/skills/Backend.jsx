@@ -1,4 +1,5 @@
 import React from "react";
+import Check from "./Check";
 
 const Backend = () => {
   return (
@@ -8,7 +9,7 @@ const Backend = () => {
       <div className="skills__box">
         <div className="skills__group">
           <div className="skills__data">
-            <i className="bx bx-badge-check"></i>
+            <Check />
 
             <div>
               <h3 className="skills__name">Node Js</h3>
@@ -17,7 +18,7 @@ const Backend = () => {
           </div>
 
           <div className="skills__data">
-            <i className="bx bx-badge-check"></i>
+            <Check />
 
             <div>
               <h3 className="skills__name">Firebase</h3>
@@ -26,7 +27,7 @@ const Backend = () => {
           </div>
 
           <div className="skills__data">
-            <i className="bx bx-badge-check"></i>
+            <Check />
 
             <div>
               <h3 className="skills__name">MongoDB</h3>
@@ -37,7 +38,7 @@ const Backend = () => {
 
         <div className="skills__group">
           <div className="skills__data">
-            <i className="bx bx-badge-check"></i>
+            <Check />
 
             <div>
               <h3 className="skills__name">MySQL</h3>
@@ -46,7 +47,7 @@ const Backend = () => {
           </div>
           {/*
           <div className="skills__data">
-            <i className="bx bx-badge-check"></i>
+            <Check />
 
             <div>
               <h3 className="skills__name"></h3>
@@ -55,7 +56,7 @@ const Backend = () => {
           </div>
 
           <div className="skills__data">
-            <i className="bx bx-badge-check"></i>
+            <Check />
 
             <div>
               <h3 className="skills__name"></h3>

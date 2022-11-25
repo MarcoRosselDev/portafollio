@@ -1,6 +1,7 @@
 import React from "react";
+import Check from "./Check";
 
-const Frontend = (dark) => {
+const Frontend = () => {
   return (
     <div className="">
       <div className="skills__container skills__content">
@@ -9,7 +10,7 @@ const Frontend = (dark) => {
         <div className="skills__box">
           <div className="skills__group">
             <div className="skills__data">
-              <i className="bx bx-badge-check"></i>
+              <Check />
 
               <div>
                 <h3 className="skills__name">HTML</h3>
@@ -18,7 +19,7 @@ const Frontend = (dark) => {
             </div>
 
             <div className="skills__data">
-              <i className="bx bx-badge-check"></i>
+              <Check />
 
               <div>
                 <h3 className="skills__name">CSS</h3>
@@ -27,7 +28,7 @@ const Frontend = (dark) => {
             </div>
 
             <div className="skills__data">
-              <i className="bx bx-badge-check"></i>
+              <Check />
 
               <div>
                 <h3 className="skills__name">JavaScript</h3>
@@ -38,7 +39,7 @@ const Frontend = (dark) => {
 
           <div className="skills__group">
             <div className="skills__data">
-              <i className="bx bx-badge-check"></i>
+              <Check />
 
               <div>
                 <h3 className="skills__name">Bootstrap</h3>
@@ -47,7 +48,7 @@ const Frontend = (dark) => {
             </div>
 
             <div className="skills__data">
-              <i className="bx bx-badge-check"></i>
+              <Check />
 
               <div>
                 <h3 className="skills__name">tailwind</h3>
@@ -56,7 +57,7 @@ const Frontend = (dark) => {
             </div>
 
             <div className="skills__data">
-              <i className="bx bx-badge-check"></i>
+              <Check />
 
               <div>
                 <h3 className="skills__name">React</h3>
