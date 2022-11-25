@@ -1,5 +1,6 @@
 {
   "name": "portafollio",
+  "homepage": "https://github.com/MarcoRosselDev/portfolio/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
