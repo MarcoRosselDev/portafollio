@@ -18,6 +18,7 @@
   --container-color-button: #fff;
   /* dark mode */
   --dark-body: #24292f;
+  --lit-body: #020d23;
   /*========== Font and typography ==========*/
   --body-font: "Poppins", sans-serif;
 
@@ -58,6 +59,7 @@
   --text-color: withe;
   --body-color: #24292f;
   --container-color: rgb(6, 169, 233);
+  --lit-body: #f7f8fa;
 }
 
 /* Responsive typography */
@@ -89,6 +91,10 @@
 .boxicon-ligth:hover {
   filter: invert(1%);
   fill: var(--title-color-dark);
+}
+.boxicon-ligth-static {
+  filter: invert(5%);
+  fill: var(--lit-body);
 }
 
 /* Change background header */
