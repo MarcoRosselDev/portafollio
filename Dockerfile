@@ -1,11 +1,20 @@
 FROM node:18.7.0 as build
 WORKDIR /lit-clothing
+# Stage 0 - Build Frontend Assets
+FROM node:18.7.0-alpine as build
 
-COPY package*.json .
+WORKDIR /app
+COPY package*.json ./
 RUN npm install
 COPY . .
-
 RUN npm run build
-FROM nginx:1.19
-COPY ./nginx/nginx.conf /etc/nginx/nginx.conf
-COPY --from=build /lit-clothing/build /usr/share/nginx/html
+
+# Stage 1 - Serve Frontend Assets
+FROM fholzer/nginx-brotli:v1.12.2
+
+WORKDIR /etc/nginx
+ADD nginx.conf /etc/nginx/nginx.conf
+
+COPY --from=build /app/build /usr/share/nginx/html
+EXPOSE 443
+CMD ["nginx", "-g", "daemon off;"]
