@@ -3,11 +3,11 @@ import React from "react";
 const ScrollDown = () => {
   return (
     <div className="home__scroll">
-      <a href="" className="home__scroll-button button--flex">
+      <a href="" className="home__scroll-button button--flex ">
         <svg
           width="32px"
           height="32px"
-          className="home__scroll-mouse"
+          className="home__scroll-mouse "
           viewBox="0 0 247 390"
           version="1.1"
           xmlns="http://www.w3.org/2000/svg"
@@ -21,7 +21,7 @@ const ScrollDown = () => {
           }}
         >
           <path
-            className="wheel"
+            className="wheel "
             d="M123.359,79.775l0,72.843"
             style={{
               fill: "none",
@@ -40,7 +40,15 @@ const ScrollDown = () => {
           ></path>
         </svg>
         <span className="home__scroll-name">Scroll Down</span>
-        <i className="uil uil-arrow-down home__scroll-arrow"></i>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          className="boxicon-ligth-static "
+        >
+          <path d="m18.707 12.707-1.414-1.414L13 15.586V6h-2v9.586l-4.293-4.293-1.414 1.414L12 19.414z" />
+        </svg>
       </a>
     </div>
   );
