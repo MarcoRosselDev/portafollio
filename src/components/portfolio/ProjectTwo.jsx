@@ -1,5 +1,6 @@
 import React from "react";
 import AboutImg from "../../assets/facebook-clone.jpeg";
+import Arrow from "./Arrow";
 
 const ProjectTwo = () => {
   return (
@@ -10,8 +11,9 @@ const ProjectTwo = () => {
         <div className="skills__group">
           <div className="portfolio__data">
             <span className="portfolio__level">
-              > taildwin on styles <br /> > firebase on autentication <br /> >
-              React on JS Library
+              <Arrow /> taildwin on styles <br />
+              <Arrow /> firebase on autentication <br />
+              <Arrow /> React on JS Library
             </span>
           </div>
           <img src={AboutImg} alt="" className="about__img" />{" "}

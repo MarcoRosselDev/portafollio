@@ -1,5 +1,6 @@
 import React from "react";
 import AboutImg from "../../assets/thumbnail.jpg";
+import Arrow from "./Arrow";
 
 const ProjectOne = () => {
   return (
@@ -11,7 +12,8 @@ const ProjectOne = () => {
           <div className="skills__group">
             <div className="portfolio__data">
               <span className="portfolio__level">
-                > css on styles <br /> > React on JS Library <br />
+                <Arrow /> css on styles <br />
+                <Arrow /> React on JS Library <br />
                 <br />
               </span>
             </div>
