@@ -21,7 +21,7 @@ const ProjectOne = () => {
           </div>
         </div>
         <a
-          href="../../fitnesPage/public/index.html"
+          href="https://react-github-370105.rj.r.appspot.com/"
           className="home__social-icon"
           target="_blank"
         >

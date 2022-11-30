@@ -4,9 +4,10 @@ const Social = () => {
   return (
     <div className="home__social">
       <a
-        href="https://www.instagram.com/"
+        href="https://www.instagram.com/marco_rossel/"
         className="home__social-icon"
         target="_blank"
+        rel="noreferrer"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -26,6 +27,7 @@ const Social = () => {
         href="https://twitter.com/MarcoRosselTw"
         className="home__social-icon"
         target="_blank"
+        rel="noreferrer"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -43,6 +45,7 @@ const Social = () => {
         href="https://github.com/MarcoRosselDev"
         className="home__social-icon"
         target="_blank"
+        rel="noreferrer"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
