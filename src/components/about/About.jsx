@@ -1,7 +1,7 @@
 import React from "react";
 import "./about.css";
 import AboutImg from "../../assets/perfil.jpg";
-import CV from "../../assets/CV-mementary.pdf";
+import CV from "../../assets/cv-marco-rossel.js.pdf";
 import Info from "./Info";
 
 const About = (mode) => {
@@ -19,10 +19,7 @@ const About = (mode) => {
           <Info mode={mode} />
 
           <p className="about__description">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo quo
-            dolorem error deleniti minus. Voluptates ipsam fugit dolorem? Aut
-            porro minima dolor labore laboriosam suscipit iusto aliquam? Neque,
-            minima reiciendis.
+            I am an architecture student passionate about technology.
           </p>
           <a download="" href={CV} className="button button--flex">
             Download CV
