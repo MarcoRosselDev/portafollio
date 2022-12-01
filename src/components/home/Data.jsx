@@ -57,8 +57,8 @@ const Data = () => {
       </h1>
       <h3 className="home__subtitle">Junior Developer</h3>
       <p className="home__description">
-        I practice trail running, I run 60 km on average a week and I hope to
-        compete seriously in the future.
+        I am an architecture student and autodidact web developer passionate
+        about technology
       </p>
       <a href="#contact" className="button button--flex">
         Say Hello

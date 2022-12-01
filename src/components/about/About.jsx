@@ -1,6 +1,6 @@
 import React from "react";
 import "./about.css";
-import AboutImg from "../../assets/perfil.jpg";
+import AboutImg from "../../assets/trail-runing.jpg";
 import CV from "../../assets/cv-marco-rossel.js.pdf";
 import Info from "./Info";
 
@@ -11,16 +11,17 @@ const About = (mode) => {
       id="about"
     >
       <h2 className="section__title">About Me</h2>
-      <span className="section__subtitle">My Introduction</span>
+      <span className="section__subtitle">
+        I practice trail running, I run 60 km on average a week and I hope to
+        compete seriously in the future.
+      </span>
 
       <div className="about__container container grid">
         <img src={AboutImg} alt="" className="about__img" />
         <div className="about__data">
           <Info mode={mode} />
 
-          <p className="about__description">
-            I am an architecture student passionate about technology.
-          </p>
+          <p className="about__description"></p>
           <a download="" href={CV} className="button button--flex">
             Download CV
             <svg
