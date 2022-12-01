@@ -29,7 +29,7 @@ const Footer = (dark) => {
 
         <div className="footer__social">
           <a
-            href="https://www.instagram.com/"
+            href="https://www.instagram.com/marco_rossel/"
             className="footer__social-link"
             target="_blank"
           >
@@ -46,7 +46,7 @@ const Footer = (dark) => {
             </svg>
           </a>
           <a
-            href="https://www.facebook.com/"
+            href="https://www.facebook.com/people/Marco-Andres/100087878936790/"
             className="footer__social-link"
             target="_blank"
           >
