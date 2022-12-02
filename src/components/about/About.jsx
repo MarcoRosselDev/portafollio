@@ -11,10 +11,12 @@ const About = (mode) => {
       id="about"
     >
       <h2 className="section__title">About Me</h2>
-      <span className="section__subtitle">
-        I practice trail running, I run 60 km on average a week and I hope to
-        compete seriously in the future.
-      </span>
+      <div className="center-text">
+        <p className="section__subtitle-about">
+          I practice trail running, I run 60 km on average a week and I hope to
+          compete seriously in the future.
+        </p>
+      </div>
 
       <div className="about__container container grid">
         <img src={AboutImg} alt="" className="about__img" />
