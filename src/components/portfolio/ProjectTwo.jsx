@@ -16,12 +16,12 @@ const ProjectTwo = () => {
               <Arrow /> React on JS Library
             </span>
           </div>
-          <img src={AboutImg} alt="" className="about__img" />{" "}
+          <img src={AboutImg} alt="" className="about__img" />
         </div>
       </div>
       <div>
         <a
-          href="https://react-github-370105.rj.r.appspot.com/"
+          href="https://login-firebase-370419.nn.r.appspot.com/login"
           className="home__social-icon"
           target="_blank"
         >
