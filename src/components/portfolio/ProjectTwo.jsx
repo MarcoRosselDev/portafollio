@@ -1,11 +1,11 @@
 import React from "react";
-import AboutImg from "../../assets/facebook-clone.jpeg";
+import AboutImg from "../../assets/cloud-plus-firebase_1x.png";
 import Arrow from "./Arrow";
 
 const ProjectTwo = () => {
   return (
     <div className="portfolio__container portfolio__content">
-      <h3 className="portfolio__title ">Facebook Clone</h3>
+      <h3 className="portfolio__title ">Firebase Login</h3>
 
       <div className="portfolio__box">
         <div className="skills__group">
