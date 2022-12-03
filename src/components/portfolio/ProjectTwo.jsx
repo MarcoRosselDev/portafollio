@@ -24,6 +24,7 @@ const ProjectTwo = () => {
           href="https://login-firebase-370419.nn.r.appspot.com/login"
           className="home__social-icon"
           target="_blank"
+          rel="noopener noreferrer"
         >
           See the Project
         </a>

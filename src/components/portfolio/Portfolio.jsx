@@ -15,7 +15,10 @@ const Portfolio = (dark) => {
         </div>
       </div>
       <div className="qwe">
-        <button className="button button--flex button-projects">
+        <button
+          className="button button--flex button-projects"
+          rel="noopener noreferrer"
+        >
           See All Projects
         </button>
       </div>
