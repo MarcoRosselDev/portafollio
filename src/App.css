@@ -280,6 +280,9 @@ img {
   display: inline-flex;
   align-items: center;
 }
+.moon-and-soon {
+  color: red;
+}
 
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
