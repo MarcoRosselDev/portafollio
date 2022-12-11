@@ -59,6 +59,7 @@
 
 .portfolio__level {
   font-size: var(--tiny-font-size);
+  display: grid;
 }
 .div-button-allProjects {
   display: grid;
@@ -91,6 +92,13 @@
   margin-top: 2rem;
 }
 
+.boxicon-check {
+  width: 2rem;
+  height: 2rem;
+}
+
+.p-arrow {
+}
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
 @media screen and (max-width: 992px) {

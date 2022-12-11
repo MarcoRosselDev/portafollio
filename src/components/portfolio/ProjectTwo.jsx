@@ -11,9 +11,12 @@ const ProjectTwo = () => {
         <div className="skills__group">
           <div className="portfolio__data">
             <span className="portfolio__level">
-              <Arrow /> taildwin on styles <br />
-              <Arrow /> firebase on autentication <br />
-              <Arrow /> React on JS Library
+              <Arrow />
+              <p className="p-arrow">taildwin on styles</p>
+              <Arrow />
+              <p className="p-arrow">firebase on autentication</p>
+              <Arrow />
+              <p className="p-arrow">React on JS Library</p>
             </span>
           </div>
           <img src={AboutImg} alt="" className="about__img" />
