@@ -81,6 +81,10 @@
   color: var(--body-color);
 }
 
+.home__social-icon {
+  color: red;
+}
+
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
 @media screen and (max-width: 992px) {
