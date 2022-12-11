@@ -20,14 +20,16 @@ const ProjectOne = () => {
             <img src={AboutImg} alt="" className="about__img" />{" "}
           </div>
         </div>
-        <a
-          href="https://react-github-370105.rj.r.appspot.com/"
-          className="home__social-icon"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          See the Project
-        </a>
+        <div className="a-link">
+          <a
+            href="https://react-github-370105.rj.r.appspot.com/"
+            className="home__social-icon"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            See the Project
+          </a>
+        </div>
       </div>
     </>
   );

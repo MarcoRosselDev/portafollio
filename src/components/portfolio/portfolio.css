@@ -83,6 +83,11 @@
 
 .home__social-icon {
   color: red;
+  margin-top: 2rem;
+}
+.a-link {
+  display: flex;
+  align-items: center;
 }
 
 /*=============== BREAKPOINTS ===============*/
