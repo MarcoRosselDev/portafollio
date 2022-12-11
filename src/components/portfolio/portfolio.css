@@ -81,13 +81,14 @@
   color: var(--body-color);
 }
 
-.home__social-icon {
-  color: red;
-  margin-top: 2rem;
-}
 .a-link {
   display: flex;
-  align-items: center;
+  justify-content: center;
+}
+
+.home__social-icon {
+  color: white;
+  margin-top: 2rem;
 }
 
 /*=============== BREAKPOINTS ===============*/
