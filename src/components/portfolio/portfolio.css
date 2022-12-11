@@ -61,6 +61,16 @@
   font-size: var(--tiny-font-size);
   display: grid;
 }
+
+.div-skills {
+  justify-content: baseline;
+}
+
+.p-arrow {
+  font-size: 16px;
+  text-align: center;
+}
+
 .div-button-allProjects {
   display: grid;
   align-items: center;
@@ -97,8 +107,6 @@
   height: 2rem;
 }
 
-.p-arrow {
-}
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
 @media screen and (max-width: 992px) {
